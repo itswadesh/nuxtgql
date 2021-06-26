@@ -1,0 +1,6 @@
+[submodule "gql"]
+	path = gql
+	url = git@ssh.dev.azure.com:v3/tablezind/tablez-gql/tablez-gql
+[submodule "shared"]
+	path = shared
+	url = git@ssh.dev.azure.com:v3/tablezind/tablez-gql/tablez-shared
