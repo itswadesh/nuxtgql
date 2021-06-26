@@ -38,6 +38,32 @@ module.exports = {
       fontFamily: {
         sans: ['sofia-pro'],
       },
+      animation: {
+        float: 'float 6s linear infinite',
+        wiggle: 'wiggle 6s linear infinite',
+        scale: 'scale 6s ease-in infinite',
+        fade: 'fade 6s linear infinite',
+      },
+      keyframes: {
+        float: {
+          '0%': { transform: 'translateY(0px)' },
+          '100%': { transform: 'translateY(-100px)' },
+        },
+        wiggle: {
+          '0%': { transform: 'translateX(0px)' },
+          '100%': { transform: 'translateX(-20px)' },
+        },
+        scale: {
+          '0%': { transform: 'scale(1)' },
+          '90%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(0)' },
+        },
+        fade: {
+          '0%': { opacity: '1' },
+          '70%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        },
+      },
     },
   },
   variants: {
@@ -45,6 +71,7 @@ module.exports = {
       backgroundColor: ['active'],
     },
   },
+
   plugins: [
     require('@tailwindcss/forms'),
     require('tailwindcss-rtl'),
